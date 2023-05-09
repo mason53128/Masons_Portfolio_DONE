@@ -198,14 +198,14 @@ h2 {
     float: left;
     background: var(--accent-color);
 }
-.polish {
-    width: 100%;
-}
-.english {
-    width: 75%;
-}
-.french {
+.python {
     width: 50%;
+}
+.c {
+    width: 35%;
+}
+.java {
+    width: 25%;
 }
 .skill {
     background-color: var(--accent-color);
@@ -240,7 +240,7 @@ h2 {
     filter: contrast(70%) brightness(110%) grayscale(20%);
 }
 .overlay {
-    background: #a8858fe0;
+    background: #7896d5;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -249,6 +249,7 @@ h2 {
     color: white;
     z-index: 2;
     transition: 0.5s ease;
+    pointer-events: none;
 }
 .project-description {
     line-height: normal;
@@ -260,12 +261,10 @@ h2 {
 }
 .project-tile:hover .overlay {
     width: 100%;
-    cursor: pointer;
     transition: 0.5s ease;
 }
 .project-tile:hover .project-description {
     left: 0;
-    cursor: pointer;
     transition: 0.5s ease;
 }
 /*=============== EXPERIENCE SECTION ===============*/
@@ -431,10 +430,6 @@ textarea {
             line-height: 2.5rem;
         }
     }
-    /* A little cheat to trick the freecodecamp certification test. It requires
-    the navbar to be on top of the viewport, but I've already done that in previous
-    projects and I think in this one it looks more interesting on the side.
-    I hope the freecodecamp team won't be mad at me :) */
     #navbar {
         position: fixed;
         margin: 0;
